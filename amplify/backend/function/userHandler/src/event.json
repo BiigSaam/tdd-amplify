@@ -1,1 +1,7 @@
-{ "test": "event" }
+{
+  "user": {
+    "userId": "u001",
+    "name": "Alice",
+    "email": "alice@example.com"
+  }
+}

@@ -15,7 +15,11 @@
       "function": {
         "userHandler": {
           "deploymentBucketName": "amplify-tddamplify-dev-3db4c-deployment",
-          "s3Key": "amplify-builds/userHandler-555873726233642b7059-build.zip"
+          "s3Key": "amplify-builds/userHandler-6164766f5937576b697a-build.zip"
+        },
+        "userLambda": {
+          "deploymentBucketName": "amplify-tddamplify-dev-3db4c-deployment",
+          "s3Key": "amplify-builds/userLambda-4a42703030336f363075-build.zip"
         }
       },
       "storage": {

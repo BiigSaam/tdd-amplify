@@ -4,6 +4,22 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "userLambda": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "userTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -20,6 +36,22 @@
         {
           "category": "function",
           "resourceName": "userHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_userLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_userLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userLambda"
         }
       ]
     }

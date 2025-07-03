@@ -1,3 +1,9 @@
 {
-  "lambdaLayers": []
+  "storageAccess": [
+    {
+      "resourceName": "userTable",
+      "category": "storage",
+      "permissions": ["create", "read", "update"]
+    }
+  ]
 }
